@@ -1,0 +1,52 @@
+/*menu bar*/
+.menu_bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 100%;
+    background-color: rgba(180, 175, 175, 0.7);
+    z-index: 1;
+}
+
+
+/*文字*/
+.title_text {
+    position: relative;
+    top: 5%;
+    left: 5%;
+    color : rgb(0, 0, 0);
+}
+
+
+/*Area*/
+.Area {
+    position: relative;
+    top: 0;
+    left: 5%;
+}
+
+/* googlemap 埋め込み */
+.g_map {
+    position: relative;
+    width: 90%;
+    padding: calc(450 / 600 * 90%) 0 0; /*iframeの高さと横幅の値を入れます*/
+}
+
+.g_map iframe {
+    position: absolute;
+    top: 0;
+    left: 5%;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*movie*/
+.movie {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
