@@ -4,18 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="sample.css">
-    <title>Cycling City</title>
+    <title>Ride and Root</title>
 </head>
 
 
 <body>
 
-    <div class="menu_bar">
 
+    <!--ハンバーガーメニュー-->
+    <!-- ここから -->
+    <div class="hamburger-menu">
+        <div class="hamburger-menu-line line-top"></div>
+        <div class="hamburger-menu-line line-middle"></div>
+        <div class="hamburger-menu-line line-bottom"></div>
+    </div>
+    <!-- ここまで -->
+
+
+    <div class="menu-bar" hidden>
+
+        
         <!--見出し1-->
         <div>
-            <h1 class="title_text">
-                Cycling City
+            <h1 class="title-text-1">
+                Ride and Root
             </h1>
         </div>
 
@@ -23,7 +35,7 @@
 
         <!--見出し2-->
         <div>
-            <h2 class="title_text">
+            <h2 class="title-text">
                 Area
             </h2>
         </div>
@@ -32,9 +44,9 @@
         <div class="Area">
             <select name="select" size="3" onChange="location.href=value;">
                 <option value="#">Please select city. </option>
+                <option value="Norikura.html">Norikura</option>
+                <option value="Zao.html">Zao</option>
                 <option value="Ikebukuro.html">Ikebukuro</option>
-                <option value="Shinjuku.html">Shinjuku</option>
-                <option value="Shibuya.html">Shibuya</option>
             </select>
         </div>
 
@@ -42,17 +54,30 @@
 
         <!--見出し3-->
         <div>
-            <h2 class="title_text">
+            <h2 class="title-text">
                 Root
             </h2>
         </div>
 
 
         <!--Google map の埋め込み-->
-        <div class="g_map">
+        <div class="g-map">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d51835.91357052233!2d139.7099738275238!3d35.70790212800119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2z5p2x5Lqs6YO95Y2D5Luj55Sw5Yy65Li444Gu5YaF77yR5LiB55uu77yZIEpSIOadseS6rOmnhSDmnbHkuqzpp4U!3m2!1d35.6812362!2d139.7671248!4m5!1s0x60188d5d4043e0dd%3A0x213775d25d2b034d!2z44CSMTcxLTAwMjIg5p2x5Lqs6YO96LGK5bO25Yy65Y2X5rGg6KKL77yR5LiB55uuIOaxoOiii-mnhQ!3m2!1d35.7295028!2d139.7109001!5e0!3m2!1sja!2sjp!4v1634125703753!5m2!1sja!2sjp"
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+
+        <!--見出し4-->
+        <div>
+            <h2 class="title-text">
+                Contents
+            </h2>
+        </div>
+
+        <!--youtubeチャンネルのリンク-->
+        <div class="link">
+            <a href="https://www.youtube.com/channel/UCTde7KTjvJrjoqEtiZXFrKA"><img src="yt_logo_rgb_light.png" width="120px" height="30px"></a>
         </div>
 
 
@@ -61,11 +86,23 @@
 
 
     <div class="movie">
-        <!--動画の埋め込み-->
-        <!--<video width="600px" height="400px" src="./../video/MHR1.mp4" loop autoplay muted playsinline controls></video>-->
+        <!--動画の埋め込み  autoplay=1 で自動再生-->
         <iframe id="player" type="text/html" width="100%" height="100%"
-            src="https://www.youtube.com/embed/kmvT8x_o64I?autoplay=1&mute=1&playsinline=1&loop=1&playlist=kmvT8x_o64I" frameborder="0"></iframe>
+            src="https://www.youtube.com/embed/ddmYcOSxA88?autoplay=1&mute=1&playsinline=1&loop=1&playlist=ddmYcOSxA88"
+            frameborder="0"></iframe>
+
     </div>
+
+<!--
+
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ddmYcOSxA88" title="YouTube video player"
+            frameborder="0" allow="accelerometer; autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+-->
+
+    <!--javascriptを使うための準備-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="javascript.js"></script>
 
 
 
