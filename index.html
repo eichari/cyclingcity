@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="sample.css">
+    <link rel="stylesheet" href="./../css/sample.css">
     <title>Ride and Root</title>
 </head>
 
@@ -42,11 +42,11 @@
 
         <!--都市選択-->
         <div class="Area">
-            <select name="select" size="3" onChange="location.href=value;">
+            <select id="Area" size="3" onChange="clickBtnif()">
                 <option value="#">Please select city. </option>
-                <option value="Norikura.html">Norikura</option>
-                <option value="Zao.html">Zao</option>
-                <option value="Ikebukuro.html">Ikebukuro</option>
+                <option value="Norikura">Norikura</option>
+                <option value="Zao">Zao</option>
+                <option value="Shimanami">Shimanami</option>
             </select>
         </div>
 
@@ -61,10 +61,9 @@
 
 
         <!--Google map の埋め込み-->
-        <div class="g-map">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d51835.91357052233!2d139.7099738275238!3d35.70790212800119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2z5p2x5Lqs6YO95Y2D5Luj55Sw5Yy65Li444Gu5YaF77yR5LiB55uu77yZIEpSIOadseS6rOmnhSDmnbHkuqzpp4U!3m2!1d35.6812362!2d139.7671248!4m5!1s0x60188d5d4043e0dd%3A0x213775d25d2b034d!2z44CSMTcxLTAwMjIg5p2x5Lqs6YO96LGK5bO25Yy65Y2X5rGg6KKL77yR5LiB55uuIOaxoOiii-mnhQ!3m2!1d35.7295028!2d139.7109001!5e0!3m2!1sja!2sjp!4v1634125703753!5m2!1sja!2sjp"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="g-map" id="g-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12892.251637658148!2d137.52726293392394!3d36.11632508152025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601d3642cdd17563%3A0x84523816ece85342!2z5LmX6Z6N5bKz!5e0!3m2!1sja!2sjp!4v1634393583590!5m2!1sja!2sjp"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
 
 
@@ -77,7 +76,7 @@
 
         <!--youtubeチャンネルのリンク-->
         <div class="link">
-            <a href="https://www.youtube.com/channel/UCTde7KTjvJrjoqEtiZXFrKA"><img src="yt_logo_rgb_light.png" width="120px" height="30px"></a>
+            <a href="https://www.youtube.com/channel/UCTde7KTjvJrjoqEtiZXFrKA"><img src="./../img/yt_logo_rgb_light.png" width="120px" height="30px"></a>
         </div>
 
 
@@ -85,11 +84,13 @@
 
 
 
-    <div class="movie">
+    <div class="movie" id="movie">
         <!--動画の埋め込み  autoplay=1 で自動再生-->
+        <!--<video width="600px" height="400px" src="./../video/MHR1.mp4" loop autoplay muted playsinline controls></video>-->
         <iframe id="player" type="text/html" width="100%" height="100%"
             src="https://www.youtube.com/embed/ddmYcOSxA88?autoplay=1&mute=1&playsinline=1&loop=1&playlist=ddmYcOSxA88"
-            frameborder="0"></iframe>
+            frameborder="0">
+        </iframe>
 
     </div>
 
@@ -102,7 +103,7 @@
 
     <!--javascriptを使うための準備-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="javascript.js"></script>
+    <script type="text/javascript" src="./../js/javascript.js"></script>
 
 
 
