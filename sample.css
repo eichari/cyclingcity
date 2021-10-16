@@ -38,7 +38,7 @@
 .g-map {
     position: relative;
     width: 90%;
-    padding: calc(450 / 600 * 90%) 0 0; /*iframeの高さと横幅の値を入れます*/
+    padding: calc(600 / 600 * 90%) 0 0; /*iframeの高さと横幅の値を入れます*/
 }
 
 .g-map iframe {
@@ -132,6 +132,4 @@
   top: calc(50% - var(--hamburger-menu-border-px)/2);
   transform: rotate(-45deg);
 }
-
-
 /* ここまで */
